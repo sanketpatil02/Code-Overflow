@@ -6,7 +6,7 @@ Awesome Open Source Coding Problems
 #### You can use ANY programming language to solve these problems
 
 ## Steps To Contribute to This Repo
-#### 1. Create New File 
+#### 1. Create New File (press "add new file" button)
 #### 2. Name this file as your Username/Name
 #### 3. Add Your Code
 #### 4. Create your pull request
