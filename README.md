@@ -1,15 +1,16 @@
 # Code-Overflow
 Awesome Open Source Coding Problems 
 
-### You can select any problem statement as per your programming skill levels
-### You can use ANY programming language to solve these problems
+## Instructions:
+#### You can select any problem statement as per your programming skill levels
+#### You can use ANY programming language to solve these problems
 
 ## Steps To Contribute to This Repo
-### 1. Create New File 
-### 2. Name this file as your Username/Name
-### 3. Add Your Code
-### 4. Create your pull request
-### 5. Done!
+#### 1. Create New File 
+#### 2. Name this file as your Username/Name
+#### 3. Add Your Code
+#### 4. Create your pull request
+#### 5. Done!
 
 # Problem Statements 
 
