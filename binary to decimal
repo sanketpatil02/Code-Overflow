@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int num;
+    cout << "Enter a binary number: ";
+    cin >> num;
+
+	int dec_value = 0;
+	int base = 1;
+	int temp = num;
+
+	while (temp) {
+		int last_digit = temp % 10;
+		temp = temp / 10;
+
+		dec_value += last_digit * base;
+
+		base = base * 2;
+	}
+
+	cout << "Number in decimal form is: " << dec_value << endl;
+}
