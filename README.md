@@ -7,7 +7,7 @@ Awesome Open Source Coding Problems
 
 ## Steps To Contribute to This Repo
 #### 1. Create New File (press "add new file" button)
-#### 2. Name this file as your Username/Name
+#### 2. Name this file as your problem statement
 #### 3. Add Your Code
 #### 4. Create your pull request
 #### 5. Done!
