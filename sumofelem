@@ -1,0 +1,8 @@
+num1 = int(input())
+ls = []
+sum = 0
+for i in num1:
+  number = int(input())
+  sum = sum + number
+  ls.add(number)
+print("Sum of number in a array",sum)
