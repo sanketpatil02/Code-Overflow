@@ -1,0 +1,57 @@
+//program on array multiplication
+#include <stdio.h>
+int main()
+{
+    int a[10][10], b[10][10], mul[10][10]={0};
+    int  i, j, k, m, n, p, q;
+    printf("Enter the no. of rows and columns of 1st matrix: ");
+    scanf("%d%d",&i,&k);
+    printf("\nEnter the no. of rows and columns of 2nd matrix:");
+    scanf("%d%d",&p,&j);
+    if(k==p)
+    {//Elements of 1st matrix
+    printf("\nEnter the elements of 1st %dx%d matrix:\n",i,k);
+    for(m=0; m<i; m++)
+    {
+        for(n=0; n<k; n++)
+        {
+            scanf("%d",&a[m][n]);
+        }
+    }
+    //Elements of 2nd matrix
+    printf("\nEnter the elements of 2nd %dx%d matrix: \n",k,j);
+    for(m=0; m<k; m++)
+    {
+        for(n=0; n<j; n++)
+        {
+            scanf("%d",&b[m][n]);
+        }
+    }
+    //Logic for multiplication
+    for(m=0; m<i; m++)
+    {
+        for(n=0; n<j; n++)
+        {
+            for(q=0; q<k; q++)
+            {
+                mul[m][n]=mul[m][n]+a[m][q]*b[q][n];
+            }
+        }
+    }
+    //Display of result
+    printf("\nMultiplication of the matrices is :\n");
+    for(m=0; m<i; m++)
+    {
+        for(n=0; n<j; n++)
+        {
+            printf("%d\t",mul[m][n]);
+        }
+        printf("\n");
+    }
+    }
+    else
+    {
+        printf("\n\nNo. of Columns of 1st matrix is not equal to no. of rows of 2nd matrix\n\n Multiplication not possible! \n ");
+    }
+    return 0;
+}
