@@ -1,0 +1,7 @@
+int main()
+{
+    char a;
+    prinf("Enter the character = ");
+    scanf("%c",&a);
+    printf("The Ascii value of Character %c = %d",a,a);
+}
