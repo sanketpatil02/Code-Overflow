@@ -1,0 +1,25 @@
+// Finding factorial of a given number
+#include <iostream>
+int factorial(int number);
+
+int main()
+{
+    int number;
+    std::cout << "Enter a positive integer: ";
+    std::cin >> number;
+
+    std::cout << "Factorial of " << number << " = " << factorial(number) << std::endl;
+    return 0;
+}
+
+int factorial(int number)
+{
+    if (number > 1)
+    {
+        return number * factorial(number - 1);
+    }
+    else
+    {
+        return 1;
+    }
+}
