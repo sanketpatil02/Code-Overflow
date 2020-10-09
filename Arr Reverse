@@ -1,0 +1,27 @@
+#include <stdio.h>
+#define MAX 100
+
+int main()
+{
+    int array[MAX], rev[MAX], c, n;
+    printf("Please, Enter the size of array:  ");
+    scanf("%d",&n);
+    printf("\nEnter %d numbers: \n",n);
+    
+    for(c=0; c<n; c++)
+    {
+        scanf("%d",&array[c]);
+    }
+
+    for(c=n-1; c>=0; c--)
+    {
+        rev[c]=array[c];
+    }
+     printf("\n Same array in reverse order: \n");
+     for(c=n-1; c>=0; c--)
+     {
+         printf("%d\n",rev[c]);
+     }
+     return 0;
+
+}
