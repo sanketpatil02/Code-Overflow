@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <windows.h>
+#pragma warning(disable: 4996)
+
+void func1(int* ptr, int size);
+int func2(const int* ptr, int size);
+
+int main()
+{
+    int grid[5];
+
+    func1(grid, 5);
+    func2(grid, 5);
+}
+
+void func1(int* ptr, int size)
+{
+    *ptr = 1, 2, 3, 4, 5;
+}
+
+int func2(const int* ptr, int size)
+{
+    int sum;
+
+    sum = ptr[0] + ptr[1] + ptr[2] + ptr[3] + ptr[4]; // *(ptr + 0); putting an asterisk makes it so that it changes the entire "ptr" value and the "[0]" value
+
+    printf("\n\nThe sum of the integers in the array is %d.\n\n", &sum);
+}
