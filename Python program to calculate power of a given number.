@@ -1,0 +1,13 @@
+import math
+
+base_number = float(input("Enter the base number"))
+exponent = float(input("Enter the exponent"))
+
+power = math.pow(base_number,exponent)
+print("Power is =",power)
+
+
+Output:
+Enter the base number 4
+Enter the exponent 4
+Power is = 64.0
