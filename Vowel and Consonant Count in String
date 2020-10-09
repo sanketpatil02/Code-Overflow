@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    char name[100];
+    int vowelCount = 0;
+    int consonantCount = 0;
+    
+    printf("Enter String for Finding Vowel and Consonant with character limit 100 = ");
+    scanf("%s",&name);
+    
+    for(int i=0;name[i]!='\0';i++) {
+        if(name[i] == 'a' || name[i] == 'e' || name[i] == 'i' || name[i] == 'o' || name[i] == 'u' || name[i] == 'A' || name[i] == 'E' || name[i] == 'I' || name[i] == 'O' || name[i] == 'U') {
+            vowelCount++;
+        } else {
+            consonantCount++;
+        }
+    }
+    
+    printf("Entered String = %s \n",name);
+    printf("Vowel Count = %d \n",vowelCount);
+    printf("Consonant Count = %d \n",consonantCount);
+}
