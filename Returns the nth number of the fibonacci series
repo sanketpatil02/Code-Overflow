@@ -1,0 +1,13 @@
+def fib(n):
+    """ Precondition: n must be >= 0.
+        Returns: fibonacci number number n. """
+    if n == 0 or n == 1:
+        return n
+
+    n2 = 0
+    n1 = 1
+    for i in xrange(2, n+1):
+        fibn = n1 + n2
+        n2 = n1
+        n1 = fibn
+    return fibn
