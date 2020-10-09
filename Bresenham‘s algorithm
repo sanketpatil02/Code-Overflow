@@ -1,0 +1,48 @@
+#include<iostream>
+#include<graphics.h>
+using namespace std;
+class pixel
+{
+public:
+ float x0,y0,x1,y1,rd,pk,pk1,p0,x,y;
+ void drawCircle(float ,float ,float,float ,float );
+ void bresCircle(float , float , float );
+}p;
+void pixel :: bresCircle(float xc, float yc, float r)
+{
+ x0=0;
+ y0=r;
+ pk=3-2*r;
+ x=x0;
+ y=y0;
+ drawCircle(xc,yc,r,x,y);
+ while(x<=y)
+ {
+ x++;
+ if(pk<0)
+ {
+ pk=pk+4*x+6;
+ }
+ else
+ {
+ y--;
+ pk=pk+4*(x-y)+10;
+ }
+ drawCircle(xc,yc,r,x,y);
+ }
+}
+void pixel :: drawCircle(float xc, float yc, float r, float x, 
+float y)
+{
+ putpixel(xc+x,yc+y,WHITE);
+ putpixel(xc-x,yc+y,WHITE);
+ putpixel(xc+y,yc+x,WHITE);
+ putpixel(xc-y,yc+x,WHITE);
+ putpixel(xc+x,yc-y,WHITE);
+ putpixel(xc-x,yc-y,WHITE);
+ putpixel(xc+y,yc-x,WHITE);
+ putpixel(xc-y,yc-x,WHITE);
+ delay(50);
+}
+class point : public pixel
+}
