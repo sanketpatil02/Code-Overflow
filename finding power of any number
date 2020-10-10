@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int power(int base , int exp)
+{
+    long long int power_of_num = 1;
+
+    while(exp!=0)
+    {
+        power_of_num *= base;
+        exp -= 1;
+    }
+
+    return power_of_num;
+}
+
+int main()
+{
+    int base, exp;
+    cin>>base>>exp;
+    cout<<power(base,exp);
+    return 0;
+    
+}
