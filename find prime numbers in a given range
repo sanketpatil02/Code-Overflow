@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+using namespace std;
+void prime_no(int a)
+{
+	int root,ans =0;
+	bool prime[a];
+	vector<int>vec;
+	memset(prime,true,a);
+	root = sqrt(a);
+	for(int i=2;i<=root;i=i+1)
+	{
+		for(int j=2*i;j<a;j=j+i)
+		{
+			prime[j] = false;
+		}
+	}
+	for(int i=2;i<a;i=i+1)
+	{
+		if(prime[i])
+		{
+			cout<<i<<" ";
+		}
+	}
+}
+int main() {
+    int a;
+    cin>>a;
+    prime_no(a);
+	return 0;
+}
