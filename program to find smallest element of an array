@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int smallest(int arr[], int a)
+{
+    int i;
+
+    int minm = arr[0];
+
+    for (i = 1; i < a; i++)
+        if (arr[i] < minm)
+            minm = arr[i];
+
+    return minm;
+}
+
+int main()
+{
+    int arr[] = {45 ,57 ,36 ,29, 10};
+    int isize = sizeof(arr) / sizeof(arr[0]);
+    cout << "smallest element of the array is " <<endl<< smallest(arr, isize);
+    return 0;
+}
