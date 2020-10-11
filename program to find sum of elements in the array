@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int sum(int arr[], int a)
+{
+    int sum = 0;
+    for (int i = 0; i < a; i++)
+    sum += arr[i];
+
+    return sum;
+}
+
+int main()
+{
+    cout<<"Enter the size of array: ";
+    int a;
+    cin>>a;
+    int arr[a];
+    for(int i=0;i<a;i=i+1)
+    {
+        cin>>arr[i];
+    }
+    cout << "Sum of the array is " << sum(arr, a);
+    return 0;
+}
