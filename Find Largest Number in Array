@@ -1,0 +1,12 @@
+public static int findLargestNumberIn(int...x){
+   int max = intArray[0];
+   for (int x : intArray) {
+      if (x > max) max = x;
+   }
+   return max;
+}
+
+public static void main(String[] args) {
+  int largestNumber = findLargestNumberIn(1,2,3,4,5);
+  System.out.println("Largest Number is: "+largestNumber);
+}
