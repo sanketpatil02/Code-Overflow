@@ -1,0 +1,77 @@
+//Program to calculate all arithmetic operations
+#include <iostream>
+using namespace std;
+int entry = 0;
+void add();
+void del();
+void mul();
+void div();
+int main()
+{
+	int choice;
+	while (true)
+	{
+		choice = 0;
+		cout << "==================================" << endl;
+		cout << "               Menu               " << endl;
+		cout << "Press 1: to perform addtion" << endl;
+		cout << "Press 2: to perform substraction" << endl;
+		cout << "Press 3: to perform multiplication" << endl;
+		cout << "Press 4: to perform division" << endl;
+		cout << "Press any other key to exit" << endl;
+		cout << "Enter you choice: ";
+		cin >> choice;
+		switch (choice)
+		{
+		case 1:
+			add();
+			break;
+		case 2:
+			del();
+			break;
+		case 3:
+			mul();
+			break;
+		case 4:
+			div();
+			break;
+		default:
+			return 0;
+			break;
+		}
+		cout << endl;
+	}
+	system("pause");
+}
+
+void add() {
+	int a = 0, b = 0, c = 0;
+	cout << "Enter a number: "; cin >> a;
+	cout << "Enter another number: "; cin >> b;
+	c = a + b;
+	cout << "Sum of " << a << " and " << b << " is: " << c;
+}
+void del() {
+	int a = 0, b = 0, c = 0;
+	cout << "Enter a number: "; cin >> a;
+	cout << "Enter another number: "; cin >> b;
+	c = a - b;
+	cout << "Difference of " << a << " and " << b << " is: " << c;
+
+}
+void mul() {
+	int a = 0, b = 0, c = 0;
+	cout << "Enter a number: "; cin >> a;
+	cout << "Enter another number: "; cin >> b;
+	c = a * b;
+	cout << "Multiplication of " << a << " and " << b << " is: " << c;
+
+}
+void div() {
+	int a = 0, b = 0, c = 0;
+	cout << "Enter a number: "; cin >> a;
+	cout << "Enter another number: "; cin >> b;
+	c = a / b;
+	cout << "Division of " << a << " and " << b << " is: " << c;
+
+}
