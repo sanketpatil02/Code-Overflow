@@ -1,0 +1,12 @@
+# Usign Join and Count function
+# Returns length of string
+
+def findLen(str): 
+    if not str: 
+        return 0
+    else: 
+        some_random_str = 'py'
+        return ((some_random_str).join(str)).count(some_random_str) + 1
+  
+str = "CodingPlotter"
+print(findLen(str))
