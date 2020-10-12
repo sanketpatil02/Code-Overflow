@@ -1,0 +1,19 @@
+# javaCode
+
+class PowerOfAnyNumber {
+
+  static int result = 1;
+
+  public static void powerOfAnyNumber(int number , int power)
+  {
+    for(int i = 1 ; i<=power; i++)
+    {
+      result *= number;
+    }
+    System.out.println(result); //1024
+  }
+
+  public static void main(String[] args) {
+    powerOfAnyNumber(2, 10);
+  }
+}
