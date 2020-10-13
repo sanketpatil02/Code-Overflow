@@ -1,0 +1,23 @@
+#include <stdio.h>
+ 
+int main()
+{
+  int i = 1, Number, Exponent; 
+  long Power = 1;
+  
+  printf("\n Please Enter any Number : ");
+  scanf(" %d", &Number);
+
+  printf("\n Please Enter the Exponent Vlaue: ");
+  scanf(" %d", &Exponent);
+    
+  while(i <= Exponent)
+  {
+  	Power = Power * Number;
+  	i++;
+  }
+  
+  printf("\n The Final result of %d Power %d = %ld", Number, Exponent, Power);
+  
+  return 0;
+}
