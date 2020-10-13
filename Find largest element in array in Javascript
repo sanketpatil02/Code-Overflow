@@ -1,0 +1,7 @@
+
+var array = [267, 306, 108];
+
+Array.max = function( array ){
+    return Math.max.apply( Math, array );
+};
+
