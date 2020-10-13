@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main{
+    public static void main(String[]args){
+        //This Program will Print 10 numbers of Fibinnoci Series
+        int number = 10;
+        if(number<=2){
+            if(number==0) System.out.println("Invalid Number");
+            else if(number==1) System.out.println(1);
+            else System.out.println(1+" "+1);
+            return;
+        }
+        int arr[] = new int[number];
+        arr[0] = 1;
+        arr[1] = 1;
+        for(int i=2;i<number;i++){
+            arr[i] = arr[i-1]+arr[i-2];
+        }
+        System.out.println("Therefore the Fibinnoci series is:");
+        for(int i=0;i<number;i++) System.out.print(arr[i]+" ");
+    }
+}
